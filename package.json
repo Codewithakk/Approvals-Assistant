@@ -6,21 +6,45 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage",
+    "test:ui": "vitest run"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^1.4.0",
+    "express-rate-limit": "^8.7.3",
     "next": "16.4.4",
     "react": "19.3.0",
-    "react-dom": "19.3.0"
+    "react-dom": "19.3.0",
+    "zod": "^4.6.7",
+    "zustand": "^5.0.16"
   },
   "devDependencies": {
     "@tailwindcss/turbopack": "^4",
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.3",
+    "@testing-library/user-event": "^14.6.8",
+    "@types/express": "^5.0.6",
+    "@types/jest": "^30.0.0",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/supertest": "^7.2.1",
+    "@vitejs/plugin-react": "^5.2.0",
+    "@vitest/ui": "^3.2.7",
     "eslint": "^9",
     "eslint-config-next": "16.4.4",
+    "express": "^5.3.0",
+    "jest": "^30.5.2",
+    "jest-environment-node": "^30.5.2",
+    "jsdom": "^29.1.1",
+    "supertest": "^7.3.1",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "ts-jest": "^29.4.15",
+    "ts-node": "^10.9.2",
+    "typescript": "^5",
+    "vitest": "^3.2.7"
   }
 }
